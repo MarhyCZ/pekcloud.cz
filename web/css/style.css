@@ -1,0 +1,153 @@
+html {
+    height: 100%;
+}
+body {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* min-height: 100%; - right way to do it*/
+    /* IE FIX: height:100%; */
+    height: 100%;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+main,
+header {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    position: relative;
+}
+main {
+    padding: 15px 0 15px 0;
+}
+header.fullscreen {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    position: absolute;
+}
+footer {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    z-index: 1;
+    margin-top: 0 !important;
+}
+/* menu */
+nav a {
+    color: rgba(0, 0, 0, 0.87) !important;
+}
+nav img {
+    height: 64px;
+    float: left;
+    margin-right: 15px;
+}
+
+/* BUGFIX, HACK until fixed */
+.sidenav-overlay {
+    z-index: 996;
+}
+
+.brand-logo {
+  font-family: Product Sans, sans-serif;
+}
+/* fullscreen */
+
+div.fullscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+/* @media only screen and (max-width: 600px) {
+    div.fullscreen {
+        position: relative;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .btn-page {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+} */
+
+.background {
+    display: block;
+    position: fixed;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.halign-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+/* Hlavní stránka */
+
+.intro .logo-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.intro .logo-wrapper .btn-large {
+    width: 25%;
+    height: auto;
+    line-height: normal;
+}
+.intro .logo-wrapper a {
+    animation: pulse1 4s ease-out infinite;
+        -webkit-animation: pulse1 4s ease-out infinite;
+}
+@keyframes "pulse1" {
+    0% {
+        background: #ffffff;
+    }
+    50% {
+        background: #eeeeee;
+    }
+    100% {
+        background: #ffffff;
+    }
+}
+@-webkit-keyframes "pulse1" {
+    0% {
+        background: #ffffff;
+    }
+    50% {
+        background: #eeeeee;
+    }
+    100% {
+        background: #ffffff;
+    }
+}
+.intro .logo-wrapper img {
+    vertical-align: middle;
+}
+/* Aplikace, Podstranky */
+
+.btn-page .btn-large {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    line-height: 1;
+    background-color: #fff;
+    color: rgba(0, 0, 0, .87);
+    margin-bottom: 0.75rem;
+}
+
+.btn-page .btn-large img {
+    padding: 0 2rem 0rem 2rem;
+}
+/* Jak začít */

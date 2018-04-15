@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "PEK Cloud",
+  "launch_path": "/index.php",
+  "description": "Pekař. V cloudu.",
+  "icons": {
+    "128": "/images/icons/favicons/icon-128x128.png"
+  },
+  "developer": {
+    "name": "Michal Marhan",
+    "url": "http://www.marstad.cz"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "cz",
+  "permissions": {
+  },
+  "locales": {
+    "cz": {
+      "name": "PEK Cloud",
+      "description": "Pekař. V cloudu."
+    }
+  }
+}
